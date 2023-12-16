@@ -35,17 +35,18 @@
         }
 
         ul {
-            list-style-type: none;
             padding: 0;
+            list-style: none;
         }
 
-        li::before {
-            content: "\2022"; /* Use a bullet point as the list item marker */
-            color: #cc0000; /* Match the font color of headings */
+        ul li::before {
+            content: "\2022";
+            color: #cc0000;
             font-weight: bold;
             display: inline-block;
             width: 1em;
             margin-left: -1em;
+            margin-right: 0.5em; /* Adjust the spacing between the bullet and the text */
         }
     </style>
 </head>
